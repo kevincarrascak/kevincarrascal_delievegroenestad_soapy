@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+nav ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "mostra-nuova", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  margin: 0em;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../img/background_img_2.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+/* HEADER START */
+
+header {
+  background: #ffbd59;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header img {
+  display: flex;
+  width: 4em;
+  height: 3.5em;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+header ul {
+  display: flex;
+}
+
+/* HEADER END - MAIN START */
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 80vh;
+  align-items: center;
+}
+
+main section {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.section_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section_1 h1 {
+  padding: 3%;
+  width: 27vh;
+  background-color: #fffcf4;
+  border-radius: 1vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.195);
+}
+
+.section_1 article {
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #fffcf4;
+  border-radius: 1vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.195);
+}
+
+.LitlleInfo {
+  margin-top: 10%;
+  background-color: rgb(255, 189, 89);
+  border-radius: 1vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.195);
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+}
+
+.LitlleInfo img {
+  width: 2em;
+  height: 2em;
+}
+
+.section_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section_2 h2 {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  width: 27vh;
+  background-color: #fffcf4;
+  border-radius: 1vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.195);
+}
+
+.section_2 article {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 10%;
+  background-color: #fffcf4;
+  border-radius: 1vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.195);
+}
+
+.duurzaam_page main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.duurzaam_page .titel_duurzaamheid {
+  display: flex;
+  justify-content: center;
+}
+
+.duurzaam_page .titel_duurzaamheid h1 {
+  width: 70%;
+  padding: 4%;
+  margin-top: 7%;
+  display: flex;
+  justify-content: center;
+  background-color: #fffcf4;
+  border-radius: 1vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.195);
+}
+
+.duurzaam_page article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.duurzaam_page section {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+.duurzaam_page article img {
+  width: 40%;
+  background-color: #fffcf4;
+  border-radius: 1vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.195);
+}
+
+.duurzaam_page article .img_recycle {
+  width: 35%;
+  padding: 3%;
+}
+
+.duurzaam_page article p {
+  padding: 5%;
+  font-size: small;
+  display: flex;
+  justify-content: flex-start;
+
+  background-color: rgb(255, 252, 244);
+  border-radius: 1vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.195);
+}
+
+.producten_page section img {
+  width: 70%;
+
+  background-color: rgb(255, 252, 244);
+  border-radius: 1vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.195);
+}
+
+.producten_page section p {
+  padding: 5%;
+  background-color: rgb(255, 252, 244);
+  border-radius: 1vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.195);
+}
+
+.producten_page section > article:first-of-type {
+  display: flex;
+  justify-content: center;
+}
+
+.producten_page h1 {
+  padding: 3%;
+  width: 60%;
+  background-color: #fffcf4;
+  border-radius: 1vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.195);
+}
+
+.producten_page section > article:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.producten_page section > article:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* MAIN END - FOOTER START */
+
+/* als ik footer in display flex zet, wordt mijn nav kleiner waardoor
+ik niet mijn ig_icon rechts van de page kan plaatsen */
+footer {
+  margin-top: 0%;
+  background: #ffbd59;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
